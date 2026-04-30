@@ -1,0 +1,29 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.image-row {
+  display: flex;
+  gap: 1rem;
+  width: 50%;
+}
+
+.image-row img {
+  flex: 1;
+  height: 220px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .image-row {
+    flex-direction: column;
+  }
+
+  .image-row img {
+    height: auto;
+  }
+}
